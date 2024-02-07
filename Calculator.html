@@ -17,7 +17,7 @@
         Calculator Application 
     <body>
         <form>
-        <table>
+        <table id="calc">
             <tr>
                 <td colspan="3">
                     <input type="text" id="screen">
@@ -26,31 +26,31 @@
             </tr>
 
             <tr>
-                <td><button type="button" value="7">7</button></td>
-                <td><button type="button" value="8" >8</button></td>
-                <td><button type="button" value="9">9</button></td>
-                <td><button type="button" value="/">/</button></td>
+                <td><button type="button" value="7" onclick = "calc.screen.value+='7'">7</button></td>
+                <td><button type="button" value="8"  onclick = "calc.screen.value+='8'">8</button></td>
+                <td><button type="button" value="9" onclick = "calc.screen.value+='9'">9</button></td>
+                <td><button type="button" value="/" onclick = "calc.screen.value+='/'">/</button></td>
             </tr>
 
             <tr>
-                <td><button type="button">4</button></td>
-                <td><button type="button">5</button></td>
-                <td><button type="button">6</button></td>
-                <td><button type="button">*</button></td>
+                <td><button type="button"  onclick = "calc.screen.value+='4'">4</button></td>
+                <td><button type="button" onclick = "calc.screen.value+='5'">5</button></td>
+                <td><button type="button" onclick = "calc.screen.value+='6'">6</button></td>
+                <td><button type="button"  onclick = "calc.screen.value+='*'">*</button></td>
             </tr>
 
             <tr>
-                <td><button type="button">1</button></td>
-                <td><button type="button">2</button></td>
-                <td><button type="button">3</button></td>
-                <td><button type="button">+</button></td>
+                <td><button type="button" onclick = "calc.screen.value+='1'">1</button></td>
+                <td><button type="button" onclick = "calc.screen.value+='2'">2</button></td>
+                <td><button type="button" onclick = "calc.screen.value+='3'">3</button></td>
+                <td><button type="button" onclick = "calc.screen.value+='+'">+</button></td>
             </tr>
 
             <tr>
-                <td><button type="button">0</button></td>
-                <td><button type="button">.</button></td>
-                <td><button type="button">=</button></td>
-                <td><button type="button">-</button></td>
+                <td><button type="button onclick = "calc.screen.value+='0'">0</button></td>
+                <td><button type="button onclick = "calc.screen.value+='.'">.</button></td>
+                <td><button type="button onclick = "calc.screen.value=eval(calc.screen.value)">=</button></td>
+                <td><button type="button" onclick = "calc.screen.value+='-'">-</button></td>
             </tr>
         </table>
         </form>
