@@ -7,6 +7,8 @@
                 background-color: white;
                 border-radius: 5px;
                 border-color: black;
+                padding: 15px;
+                width: 50px;
             }
             button:hover {
                 background-color: green;
@@ -16,20 +18,28 @@
     </head>
         Calculator Application 
     <body>
-        <form>
-        <table id="calc">
+
+       
+      
+
+
+        <table id="calc" style="background-color: powderblue">
+
             <tr>
                 <td colspan="3">
-                    <input type="text" id="screen">
+                    <input type="text" id="screen" style="height: 25px; border-width: 3px; border-color: black">
                 </td>
                 <td><button type="button" id="result">C</button></td>
             </tr>
 
             <tr>
+
                 <td><button type="button" value="7" onclick = "calc.screen.value+='7'">7</button></td>
                 <td><button type="button" value="8"  onclick = "calc.screen.value+='8'">8</button></td>
                 <td><button type="button" value="9" onclick = "calc.screen.value+='9'">9</button></td>
                 <td><button type="button" value="/" onclick = "calc.screen.value+='/'">/</button></td>
+
+             
             </tr>
 
             <tr>
@@ -53,6 +63,6 @@
                 <td><button type="button" onclick = "calc.screen.value+='-'">-</button></td>
             </tr>
         </table>
-        </form>
+       
     </body>
 </html>
